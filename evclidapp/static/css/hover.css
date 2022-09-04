@@ -1,0 +1,220 @@
+.link-effect,
+.wrap-src svg,
+.about__link-detailed,
+.us-work__btn,
+.us-work__contract,
+.quest__item,
+.quest__item .quest__item-text,
+.quest__item svg ellipse,
+.quest__item svg path,
+a.footer__item-text,
+.footer__item-icon,
+.footer__item-icon .footer__link-soc svg path,
+.footer__input,
+.footer__area,
+button,
+svg {
+  transition: all 250ms ease;
+}
+
+a {
+  outline: none;
+}
+
+
+.main-menu-bar:hover .bar-line-1 {
+  border-top: 4px solid #FF9900;
+}
+.main-menu-bar:hover .bar-line-2 {
+  border-top: 4px solid #FF9900;
+}
+.main-menu-bar:hover .bar-line-3 {
+  border-top: 4px solid #FF9900;
+}
+.main-menu-bar:active .bar-line-1 {
+  border-top: 4px solid #E1670E;
+}
+.main-menu-bar:active .bar-line-2 {
+  border-top: 4px solid #E1670E;
+}
+.main-menu-bar:active .bar-line-3 {
+  border-top: 4px solid #E1670E;
+}
+
+
+
+
+.link-effect {
+  color: #333;
+  outline: none;
+  border: 2px solid transparent;
+}
+.link-effect:focus {
+  border: 2px solid #FF9900;
+}
+.link-effect:hover {
+  border-bottom: 2px solid #FF9900;
+}
+.link-effect:active {
+  border: 2px solid transparent;
+  border-bottom: 2px solid #E1670E;
+  color: #E1670E;
+}
+
+
+
+
+.wrap-src:hover svg rect {
+  fill: #FF9900;
+}
+.wrap-src:hover svg path {
+  stroke: #FF9900;
+}
+.wrap-src:active svg rect {
+  fill: #E1670E;
+}
+.wrap-src:active svg path {
+  stroke: #E1670E;
+}
+
+
+
+
+button {
+  cursor: pointer;
+}
+button:focus {
+  background-color: #FF9900B2;
+}
+button:hover {
+  background-color: #FF9900B2;
+}
+button:active {
+  transform: scale(0.98);
+  background-color: #E1670EB2;
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+
+.about__link-detailed {
+  color: #fff;
+}
+.about__link-detailed:focus {
+  background-color: #F7B045;
+  border: #F7B045;
+}
+.about__link-detailed:hover {
+  background-color: #F7B045;
+  border: 3px solid #F7B045;
+}
+
+
+
+
+.us-work__btn:focus {
+  background-color: #F7B045;
+  border: #F7B045;
+}
+.us-work__btn:hover {
+  background-color: #F7B045;
+  border: #F7B045;
+}
+.us-work__btn:active {
+  background-color: #E1670E;
+  color: #fff;
+}
+
+
+.us-work__contract {
+  color: #000;
+}
+.us-work__contract:focus {
+  color: #fff;
+  background-color: #666666;
+}
+.us-work__contract:hover {
+  color: #fff;
+  background-color: #666666;
+}
+.us-work__contract:active {
+  background-color: #000;
+  color: #fff;
+}
+
+.quest__item {
+  outline: none;
+  cursor: pointer;
+}
+.quest__item:focus,
+.quest__item:hover {
+  border-color: #FF9900;
+}
+.quest__item:active {
+  border-color: #E1670E;
+}
+.quest__item:focus .quest__item-text,
+.quest__item:hover .quest__item-text {
+  color: #FF9900;
+}
+.quest__item:active .quest__item-text {
+  color: #E1670E;
+}
+.quest__item:focus svg ellipse,
+.quest__item:hover svg ellipse {
+  fill: #FF9900;
+}
+.quest__item:focus svg path,
+.quest__item:hover svg path {
+  fill: #fff;
+}
+.quest__item:active svg path {
+  fill: #fff;
+}
+
+
+a.footer__item-text {
+  color: #CACACA;
+}
+a.footer__item-text:focus {
+  outline: 1px solid #FF9900;
+}
+a.footer__item-text:hover {
+  color: #FF9900;
+  outline: none;
+}
+a.footer__item-text:active {
+  color: #E1670E;
+}
+
+
+
+
+.footer__item-icon .footer__link-soc:focus svg {
+  outline: 1px solid #FF9900;
+}
+.footer__item-icon .footer__link-soc:hover svg {
+  outline: none;
+}
+.footer__item-icon .footer__link-soc:hover svg path {
+  fill: #FF9900;
+}
+.footer__item-icon .footer__link-soc:active svg path {
+  fill: #E1670E;
+}
+
+
+
+
+.footer__input:focus,
+.footer__area:focus {
+  background-color: #c8c7c7;
+}
+.footer__input:hover,
+.footer__area:hover {
+  background-color: #c8c7c7;
+}
+.footer__input:active,
+.footer__area:active {
+  background-color: #a19f9f;
+}

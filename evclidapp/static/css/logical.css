@@ -1,0 +1,39 @@
+.viewMenu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 162px;
+    padding-left: 80px;
+    z-index: 200;
+}
+
+.viewItem {
+    margin-bottom: 60px;
+}
+@media screen and (max-width: 769px) {
+    .swiper {
+        height: 638px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .viewMenu {
+        padding-top: 144px;
+        padding-left: 50px;
+    }
+}
+@media screen and (max-width: 630px) {
+    .swiper {
+        height: auto;
+    }
+    .viewMenu {
+        padding-top: 78px;
+        padding-left: 15px;
+    }
+    .viewItem {
+        margin-bottom: 32px;
+    }
+}
+
+
+

@@ -1,0 +1,540 @@
+/* первый брек-поинт */
+
+@media screen and (max-width: 1710px) {
+  .main-menu_list {
+    display: none;
+  }
+  .main-menu-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 23px;
+    order: -1;
+  }
+  .bar-line-1, 
+  .bar-line-2,
+  .bar-line-3 {
+    border-top: 3px solid #333;
+  }
+
+  /* стили секции ABOUT */
+  .about__wrap-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .about__wrap-detailed {
+    height: 640px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    max-width: none;
+  }
+  .about__wrap-block-svg {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .about__block-svg:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .about__block-svg {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  /* стили секции US-WORK */
+  .us-work__wrap-content {
+    width: 40%;
+    min-width: 437px;
+  }
+}
+
+/* следующий брейк поинт 1440 (второй брек-поинт)*/
+@media screen and (max-width: 1440px) {
+  /* общие стили */
+  .header.container {
+    padding: 14px 50px;
+  }
+  .container {
+    margin-bottom: 80px;
+    padding: 0 50px;
+  }
+  /*  стили секции HEADER */
+  .header.container {
+    padding: 26px 50px;
+  }
+  .wrapper-logo img {
+    width: 150px;
+  }
+  .bar-wrap-menu {
+    height: 770px;
+  }
+  /* стили секции ORDER */
+  .order__wrap-content {
+    padding-top: 160px;
+    background-image: url(/img/bg-image/main-bg-1024.jpeg);
+  }
+  .order__heading {
+    margin-bottom: 22px;
+    font-size: 60px;
+  }
+  .order__paragraph {
+    max-width: 660px;
+    margin-bottom: 63px;
+    font-size: 20px;
+  }
+  .order__btn {
+    padding: 25px 35px;
+    margin-bottom: 160px;
+  }
+  /* стили секции ABOUT */
+  .about__heading {
+    margin-bottom: 15px;
+  }
+  .about__paragraph {
+    /* letter-spacing: -0.020px; */
+    margin-bottom: 60px;
+  }
+  .about__wrap-detailed {
+    width: 100%;
+  }
+  .about__detailed {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .about__text-detailed {max-width: 455px;
+    letter-spacing: 0.1px;
+  }
+  .about__link-detailed {
+    padding: 20px 35px;
+  }
+  .about__wrap-block-svg {
+    flex-direction: column;
+  }
+  .about__block-svg {
+    flex-direction: row;
+    max-width: 100%;
+    padding: 65px 0 60px 80px;
+  }
+  .about__block-svg:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  /* стили секции US-WORK */
+  .us-work__heading {
+    line-height: 60px;
+  }
+  .us-work__list {
+    margin-bottom: 60px;
+  }
+  .us-work__item:not(:last-child) {
+    margin-right: 79px;
+  }
+  .us-work__wrap {
+    background-image: url(/img/bg-image/us-work-bg-1024.jpeg);
+    background-size: 437px 100%;
+  }
+  .us-work__wrap-content {
+    margin-bottom: 25px;
+  }
+  .us-work__h3 {
+    line-height: 20px;
+    margin-bottom: 13px;
+  }
+  .us-work__link {
+    padding: 20px 37px;
+  }
+  /* стили секции QUEST */
+  .quest__item {
+    padding-top: 31px;
+    padding-bottom: 27px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .quest__item-text {
+    max-width: 750px;
+  }
+  /* стили секции FOOTER */
+  .footer {
+    padding: 50px;
+  }
+  .footer__side-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 255px;
+    margin-right: 110px;
+  }
+  .footer__list {
+    margin-bottom: 80px;
+  }
+  .footer__form {
+    min-width: 540px;
+  }
+  .footer__block-text {
+    display: none;
+  }
+  .footer__input {
+    height: 60px;
+  }
+  .footer__area {
+    height: 155px;
+  }
+  .footer__btn {
+    padding: 20px 35px;
+  }
+  .footer__checkbox-text {
+    font-size: 16px;
+  }
+}
+
+
+/* следуйщий брек-поинт 1023-768рх (третий брек-поинт) */
+@media screen and (max-width: 1023px) {
+  /* стили для секции HEADER */
+  .header.container {
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+  }
+  .bar-wrap-menu {
+    height: 713px;
+  }
+
+  /* стили для секции ORDER */
+  .order {
+    height: 638px;
+    overflow: hidden;
+  }
+  .order__heading {
+    font-size: 50px;
+  }
+  .order__wrap-text {
+    width: 100%;
+  }
+  .order__wrap-content {
+    padding: 160px 40px 40px;
+  }
+  .order__paragraph {
+    font-size: 18px;
+  }
+  .order__btn {
+    margin-bottom: 120px;
+  }
+
+  /* стили для секции ABOUT */
+  .about__wrap-detailed {
+    height: 645px;
+    background-position: 49% 30%;
+  }
+  .about__detailed {
+    padding: 34px 40px;
+  }
+  .about__text-detailed {
+    margin-right: 45px;
+    letter-spacing: normal;
+    line-height: 30px;
+  }
+  .about__block-svg {
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    padding-top: 37px;
+    padding-right: 0;
+  }
+  .about__block-svg:not(:last-child) {
+    margin-right: 0;
+  }
+  .about__wrap-svg {
+    margin-right: 16px;
+  }
+  .about__img {
+    width: 115px;
+  }
+  .about__wrap-content {
+    margin-right: 7%;
+  }
+
+   /* стили для секции US-WORK */
+  .us-work__heading {
+    margin-bottom: 45px;
+  }
+  .us-work__list {
+    justify-content: space-between;
+    margin-bottom: 55px;
+  }
+  .us-work__wrap {
+    background-image: url(/img/bg-image/us-work-768.jpeg);
+    background-size: 100% 24vh;
+    background-position: top;
+  }
+  .us-work__wrap-content {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 25px;
+    padding-top: 325px;
+  }
+  /* стили для секции QUEST */
+  .quest__heading {
+    margin-bottom: 37px;
+  }
+  .quest__item {
+    /* padding-top: 30px;
+    padding-bottom: 30px; */
+    line-height: 32px;
+  }
+  .quest__item-text {
+    max-width: 570px;
+  }
+  /* стили для секции FOOTER */
+  .footer {
+    flex-flow: column-reverse;
+  }
+  .footer__wrap-logo {
+    margin-bottom: 10px;
+  }
+  .footer__logo {
+    width: 220px;
+  }
+  .footer__list {
+    display: none;
+  }
+  .footer__side-menu {
+    margin-right: 0;
+  }
+  .footer__block-form {
+    max-width: 540px;
+    margin-bottom: 45px;
+  }
+  .footer__area {
+    padding: 20px 25px;
+    margin-bottom: 27px;
+  }
+  .footer__btn {
+    padding: 22px 39px;
+  }
+}
+
+
+
+/* следуйщий брек-поинт 630 - 320px (третий брек-поинт) */
+@media screen and (max-width: 630px) {
+  /* общие стили */
+  .header.container {
+    align-items: flex-start;
+    padding: 23px 15px 7px;
+    
+  }
+  .container {
+    margin-bottom: 60px;
+    padding: 0 15px;
+  }
+  .heading-2 {
+    font-size: 24px;
+  }
+  .heading-3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+
+  /* стили секции HEADER */
+  .wrapper-logo img {
+    width: 115px;
+  }
+  .bar-wrap-menu {
+    height: 393px;
+  }
+  /* стили секции ORDER */
+  .order {
+    height: auto;
+    overflow: hidden;
+  }
+  .order__wrap-content {
+    padding: 60px 20px 15px;
+  }
+  .order__wrap-text {
+    text-align: center;
+  }
+  .order__heading {
+    margin-bottom: 10px;
+    font-size: max(1em, min(4em, calc(100vw * 4 / 65)));
+  }
+  .order__paragraph {
+    margin-bottom: 30px;
+    font-size: 12px;
+  }
+  .order__btn {
+    padding: 18px 30px;
+    margin-bottom: 40px;
+    font-size: 12px;
+  }
+
+
+  /* стили секции ABOUT */
+  section.about {
+    margin-bottom: 40px;
+  }
+  .about__heading {
+    margin-bottom: 20px;
+  }
+  .about__paragraph {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .about__wrap-detailed {
+    height: auto;
+    padding-top: 70.7%;
+    margin-bottom: 35px;
+    align-items: flex-start;
+    background-image: url(/img/bg-image/about-bg-320.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .about__detailed {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+  }
+  .about__text-detailed {
+    margin-right: 0;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .about__link-detailed {
+    padding: 10px 40px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #FF9900;
+  }
+  
+  .about__block-svg {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    border: none;
+  }
+  .about__block-svg:not(:last-child) {
+    margin-bottom: 25px;
+}
+  .about__img {
+    width: 64px;
+  }
+  .about__text-block-svg {
+    font-size: 14px;
+    line-height: 29px;
+  }
+  .about__wrap-content {
+    margin-right: 0;
+  }
+
+  /* стили секции US-WORK */
+  .us-work__heading {
+    margin-bottom: 5px;
+  }
+  .us-work__list {
+    margin-bottom: 15px;
+  }
+  .us-work__item {
+    font-size: 14px;
+  }
+  .us-work__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .us-work__wrap {
+    background-size: 100% 16%;
+  }
+  .us-work__wrap-content {
+    min-width: 0;
+    padding-top: 62%;
+    margin-bottom: 15px;
+  }
+  .us-work__paragraph {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .us-work__link {
+    padding: 14px 35px;
+    font-size: 12px;
+  }
+  .us-work__btn:not(:last-child) {
+    padding: 12px 45px;
+    margin-right: 5px;
+  }
+  .us-work__contract {
+    padding: 13px 29px;
+  }
+  /* стили секции QUEST */
+  .quest__heading {
+    margin-bottom: 15px;
+  }
+  .quest__item {
+    padding: 27px 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+  .crusade {
+    width: 30px;
+  }
+  /* стили секции FOOTER */
+  .footer {
+    padding: 30px 15px;
+  }
+  .footer__form {
+    min-width: auto;
+  }
+  .footer__wrap-btn {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #595959;
+    flex-direction: column;
+  }
+  .footer__btn {
+    min-width: 190px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    font-size: 12px;
+  }
+  .footer__block-form {
+    margin-bottom: 15px;
+  }
+  .footer__heading {
+    line-height: 29px;
+  }
+  .footer__area {
+    margin-bottom: 22px;
+  }
+  .footer__btn {
+    margin-bottom: 16px;
+    padding: 14px 24px;
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    font-weight: normal;
+  }
+  .footer__logo {
+    width: 130px;
+  }
+  .footer__side-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+  }
+  .footer__item-icon:not(:last-child) {
+    margin-right: 15px;
+  }
+  .footer__link-soc svg {
+    width: 40px;
+    height: 45px;
+  }
+}

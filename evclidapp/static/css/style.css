@@ -1,0 +1,467 @@
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-Regular.woff') format('woff'),
+       url('../font/Montserrat-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-SemiBold.woff') format('woff'),
+       url('../font/Montserrat-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-Bold.woff') format('woff'),
+       url('../font/Montserrat-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-ExtraBold.woff') format('woff'),
+       url('../font/Montserrat-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 1920px;
+  margin: auto;
+  font-family: 'Montserrat';
+}
+
+header.container {
+  margin-bottom: 0;
+  padding: 14px 75px 14px 75px;
+}
+
+body {
+  min-width: 320px;
+}
+
+.container {
+  padding: 0 75px;
+}
+
+.container {
+  margin-bottom: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.heading-2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.heading-3 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+p {
+  margin: 0;
+}
+
+.about__paragraph, .about__text-detailed,
+.about__text-block-svg, .us-work__paragraph,
+.footer__block-text {
+  line-height: 32px;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  outline: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+.main-menu {
+  position: relative;
+  height: 24px;
+}
+/* ститли секции SRC */
+.wrap-src-close {
+  width: 290px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: -500px;
+  right: 0;
+  z-index: 200;
+}
+.input-src {
+  height: 100%;
+  border-bottom: 2px solid #DCDCDC;
+}
+.closed-src {
+  width: 24px;
+  height: 100%;
+  padding: 5px;
+  border: 2px solid #999;
+  border-radius: 50%;
+}
+/* конец ститли секции SRC */
+
+
+.main-menu-bar {
+  display: none;
+  z-index: 120;
+}
+.bar-wrap-menu {
+  width: 420px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -500px;
+  height: 713px;
+  background-color: #fff;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+  /* border: 1px solid red; */
+  transition: all 320ms ease;
+  z-index: -11;
+}
+
+
+
+/* ститли секции HEADER */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-logo {
+  display: inline-block;
+}
+.main-menu {
+  display: flex;
+  align-items: center;
+}
+.main-menu__item {
+  margin-right: 85px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.wrap-src {
+  display: inline-block;
+  height: 100%;
+}
+
+/* стили секции ORDER */
+.order {
+  position: relative;
+}
+.order__wrap-content {
+  padding-top: 100px;
+  padding-left: 80px;
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.order__wrap-text {
+  width: 837px;
+}
+
+.order__wrap-text > * {
+  position: relative;
+  z-index: 2;
+}
+.order__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  color: #fff;
+  font-size: 70px;
+  font-weight: 800;
+  font-size: 70px;
+}
+
+.order__paragraph {
+  margin: 0;
+  margin-bottom: 90px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.order__btn {
+  padding: 25px 37px;
+  margin-bottom: 100px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #FF9900;
+}
+
+/* стили СЛПЙДЕР */
+.swiper-wrapper {
+  /* min-height: 500px; */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slide1 {
+  /* background-image: url(../static/img/bg-image/main-bg.jpeg); */
+  background-image: url(../img/bg-image/main-bg.jpeg);
+}
+.slide2 {
+  background-image: url(../img/bg-image/main-bg2.png);
+}
+.slide3 {
+  background-image: url(../img/bg-image/main-bg3.png);
+}
+
+.slide1, .slide2, .slide3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.swiper-pagination > span {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+.swiper-horizontal>.swiper-pagination-bullets 
+.swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets 
+.swiper-pagination-bullet {
+  margin: 10px;
+}
+
+
+/* стили секции ABOUT */
+.about__heading {
+  margin-bottom: 20px;
+}
+.about__paragraph {
+  margin-bottom: 50px;
+}
+.about__wrap-block {
+  display: flex;
+}
+.about__wrap-detailed {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 30px;
+  max-width: 870px;
+  background-image: url(../img/bg-image/about-bg-img.jpeg);
+  background-size: cover;
+}
+.about__detailed {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+}
+.about__text-detailed {
+  margin-right: 140px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.about__link-detailed {
+  padding: 20px 38px;
+  color: #fff;
+  font-weight: 600;
+  background-color: transparent;
+  border: 3px solid #FF9900;
+}
+.about__wrap-block-svg {
+  display: inline-block;
+}
+.about__block-svg {
+  display: flex;
+  align-items: center;
+  max-width: 870px;
+  padding: 65px 60px;
+  border: 1px solid #cacaca;
+}
+.about__block-svg:not(:last-child) {
+  margin-bottom: 30px;
+}
+.about__wrap-svg {
+  margin-right: 50px;
+}
+.about__text-block-svg {
+  max-width: 450px;
+}
+
+/* стили для секции US-WORK */
+.us-work__heading {
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+.us-work__h3 {
+  line-height: 32px;
+}
+.us-work__list {
+  display: flex;
+  margin-bottom: 45px;
+}
+.us-work__item {
+  font-size: 18px;
+}
+.us-work__item:not(:last-child) {
+  margin-right: 85px;
+}
+.us-work__wrap {
+  background-image: url(../img/bg-image/us-work-bg.jpeg);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.us-work__wrap-content {
+  max-width: 758px;
+  margin-bottom: 50px;
+}
+.us-work__link {
+  display: inline-block;
+  padding: 20px 38px;
+}
+.us-work__link:not(:last-child) {
+  margin-right: 30px;
+}
+.us-work__btn {
+  color: #fff;
+  font-weight: 700;
+  background-color: #FF9900;
+}
+.us-work__contract {
+  font-weight: 700;
+  border: 1px solid #333;
+}
+
+/* стили секции QUEST */
+.quest__heading {
+  margin-bottom: 30px;
+}
+.quest__list {
+  display: block;
+}
+.quest__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
+ 
+}
+.quest__item:not(:last-child)  {
+  border-bottom-color: transparent;
+}
+
+
+/* стили секции FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding: 50px 75px;
+  color: #fff;
+  background-color: rgba(34, 34, 34, 1);
+}
+.footer__wrap-logo {
+  margin-bottom: 20px;
+}
+.footer__list {
+  display: block;
+  margin-bottom: 40px;
+  color: rgba(202, 202, 202, 1);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 36px;
+}
+.footer__item-icon a {
+  display: block;
+}
+.footer__item-icon:not(:last-child) {
+  margin-right: 25px;
+}
+.footer__block-text {
+  display: flex;
+  align-items: center;
+}
+
+/* стили формы FOOTER__FORM */
+input, textarea {
+  border: none;
+  outline: transparent;
+}
+textarea {
+  resize: none;
+}
+.footer__block-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 570px;
+}
+.footer__heading {
+  margin-bottom: 25px;
+  line-height: 58px;
+  color: rgba(202, 202, 202, 1);
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  min-width: 570px;
+}
+
+.footer__input {
+  margin-bottom: 25px;
+  padding: 14px 25px;
+  background-color: rgba(65, 65, 65, 1);
+}
+
+.footer__area {
+  margin-bottom: 30px;
+  padding: 14px 25px;
+  background-color: rgba(65, 65, 65, 1);
+}
+
+.footer__wrap-btn {
+  display: flex;
+  align-items: center;
+}
+
+.footer__btn {
+  margin-right: 20px;
+  padding: 20px 50px;
+  color: #fff;;
+  font-weight: 700;
+  background-color: rgba(255, 153, 0, 1);
+} 
+.footer__checkbox-text {
+  color: rgba(202, 202, 202, 1);
+}/* конец стилей формы FOOTER__FORM */
+
+.footer__block-text {
+  max-width: 365px;
+  color: rgba(202, 202, 202, 1);
+}
