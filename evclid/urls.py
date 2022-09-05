@@ -20,5 +20,6 @@ from evclidapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
+    path('', views.index, name='index'),
+    path('thanks/', views.thanks, name='thanks')
 ]
