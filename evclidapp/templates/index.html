@@ -292,14 +292,37 @@
       <h2 class="footer__heading heading-2">
         Оставить заявку
       </h2>
-      <form class="footer__form" name="footer__form" id="footer__form" action="//" method="post">
-        <input class="footer__input input-name" type="text" name="user-name" id="user-name" placeholder="Фамилия, Имя, Отчество" required>
-        <input class="footer__input input-mail" type="text" name="e-mail" id="e-mail" placeholder="E-mail" required>
-        <textarea class="footer__area message-area" name="message" id="message" cols="30" rows="6" maxlength="2000" required placeholder="Сообщение"></textarea>
+      <form class="footer__form" name="footer__form" id="footer__form" action="" method="post">
+        {% csrf_token %}
+        {{ form.name }}
+        {% if form.name.errors %}
+          <div class="alert alert-danger">
+            <strong>{{ form.name.errors }}</strong>
+          </div>
+        {% endif %}
+
+        {{ form.email }}
+        {% if form.email.errors %}
+          <div class="alert alert-danger">
+            <strong>{{ form.email.errors }}</strong>
+          </div>
+        {% endif %}
+
+        {{ form.text }}
+        {% if form.text.errors %}
+          <div class="alert alert-danger">
+            <strong>{{ form.text.errors }}</strong>
+          </div>
+        {% endif %}
         <div class="footer__wrap-btn">
           <button class="footer__btn" type="submit" name="btn" id="btn">Отправить данные</button>
           <div class="footer-flex">
-            <input class="footer__checkbox" type="checkbox">
+            {{ form.check_box }}
+            {% if form.check_box.errors %}
+              <div class="alert alert-danger">
+                <strong>{{ form.check_box.errors }}</strong>
+              </div>
+            {% endif %}
             <span class="footer__checkbox-text">Согласен на обработку данных</span>
           </div>
         </div>
