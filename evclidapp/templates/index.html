@@ -53,12 +53,18 @@
       <div class="swiper">
         <div class="order__wrap-content">
           <div class="order__wrap-text">
-            <h2 class="order__heading">
+            <!-- <h2 class="order__heading">
               Проектные решения любой сложности
+            </h2> -->
+            <h2 class="order__heading">
+              {{ content.title }}
             </h2>
 
-            <p class="order__paragraph">
+            <!-- <p class="order__paragraph">
               Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+            </p> -->
+            <p class="order__paragraph">
+              {{ content.subtitle }}
             </p>
 
             <button class="order__btn" name="button">
@@ -82,8 +88,11 @@
         О нас
       </h2>
 
-      <p class="about__paragraph">
+      <!-- <p class="about__paragraph">
         Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.
+      </p> -->
+      <p class="about__paragraph">
+        {{ content.about }}
       </p>
 
       <div class="about__wrap-block">
@@ -104,11 +113,17 @@
               <img class="about__img" src="{% static '/img/svg-icon/cube.svg' %}" alt="cube">
             </div>
             <div class="about__wrap-content">
-              <h3 class="heading-3">
+              <!-- <h3 class="heading-3">
                 Консультация с широким активом
+              </h3> -->
+              <h3 class="heading-3">
+                {{ content.first_advantage_title }}
               </h3>
-              <p class="about__text-block-svg">
+              <!-- <p class="about__text-block-svg">
                 А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.
+              </p> -->
+              <p class="about__text-block-svg">
+                {{ content.first_advantage_text }}
               </p>
             </div>
           </div>
@@ -117,11 +132,17 @@
               <img class="about__img" src="{% static '/img/svg-icon/gearWheel.svg' %}" alt="gear wheel">
             </div>
             <div class="about__wrap-content">
-              <h3 class="heading-3">
+              <!-- <h3 class="heading-3">
                 В своём стремлении повысить 
+              </h3> -->
+              <h3 class="heading-3">
+                {{ content.second_advantage_title }} 
               </h3>
-              <p class="about__text-block-svg">
+              <!-- <p class="about__text-block-svg">
                 Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества. 
+              </p> -->
+              <p class="about__text-block-svg">
+                {{ content.second_advantage_text }}
               </p>
             </div>
           </div>

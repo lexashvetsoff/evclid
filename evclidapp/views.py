@@ -1,7 +1,34 @@
 from django.shortcuts import render
 
 from evclidapp.forms import AppealForm
-from evclidapp.models import Appeal
+from evclidapp.models import Appeal, IndexPage
+
+
+def get_index_content():
+    content_page = IndexPage.objects.all()
+
+    if content_page:
+        content = {
+            'title': content_page[0].title,
+            'subtitle': content_page[0].subtitle,
+            'about': content_page[0].about,
+            'first_advantage_title': content_page[0].first_advantage_title,
+            'first_advantage_text': content_page[0].first_advantage_text,
+            'second_advantage_title': content_page[0].second_advantage_title,
+            'second_advantage_text': content_page[0].second_advantage_text
+        }
+    else:
+        content = {
+            'title': 'Заголовок сайта',
+            'subtitle': 'Подзаголовок сайта',
+            'about': 'Раздел описания компании',
+            'first_advantage_title': 'Заголовок первого приемущества',
+            'first_advantage_text': 'Описание первого приемущества',
+            'second_advantage_title': 'Заголовок второго приемущества',
+            'second_advantage_text': 'Описание второго приемущества'
+        }
+    
+    return content
 
 
 def index(request):
@@ -24,9 +51,12 @@ def index(request):
             return render(request, 'thanks.html')
     else:
         form = AppealForm()
+    
+    content = get_index_content()
 
     context = {
-        'form': form
+        'form': form,
+        'content': content
     }
 
     return render(request, 'index.html', context)
